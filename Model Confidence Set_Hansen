@@ -1,0 +1,5 @@
+#short test of loss data found in MCS package
+library(MCS)
+data(Loss)
+SSM1 <- MCSprocedure(Loss = Loss, alpha = 0.2, B = 5000, statistic = "Tmax")
+SSM1 <- MCSprocedure(Loss = Loss, alpha = 0.2, B = 5000, statistic = "TR")
